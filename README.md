@@ -1,7 +1,7 @@
 FM-WebDirect-Redirect
 =====================
 
-Feb 2024 Update: Replaced php with javascript to store variables and redirect.
+Feb 2024 Update: Replaced php with javascript to store variables and redirect. Note that you will need to whitelist any hosts that webd is able to redirect to, so at a minumum you will need to add the host where these files live.
 
 Another common request from developers is to change where the user is directed to when logging out of a WebDirect session. The default is to return the WebDirect Launch Center, which shows available WebDirect enabled FileMaker files.
 
@@ -17,7 +17,7 @@ You can test as a user when logging in via WebDirect with the following:
 user: demo
 pass: demo
 
-These can be changed as needed, and taken down from your FileMaker Server when done. Update the php to use with your own solutions.
+These can be changed as needed, and taken down from your FileMaker Server when done. Update the html files to use with your own solutions.
 
 If the HTML files are hosted on a different web server than the FileMaker Server, you will need to update the FileMaker script steps that reference "Get ( HostName )" with the address of where the files are hosted. You may also need to adjust the CORS settings to allow javascript to run.
 
