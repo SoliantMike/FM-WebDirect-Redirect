@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <title>Redirect</title>
+
+		<script type="text/javascript">
+
+		var url_string = window.location.href; 
+		var url        = new URL(url_string);
+		var fm_file    = "WebDirect_Demo";
+		var param      = url.searchParams.get("param");
+		// whitelist the domain that you redirect to in FMS, replace "MY_DOMAIN_NAME"
+		// if domain is not in whitelist, homeurl will not be included by webd
+		var homeurl    = "https://MY_DOMAIN_NAME/out.html";
+		var my_url     = "/fmi/webd/" + fm_file + "?script=Pass&param=" + param + "&homeurl=" + homeurl;
+		// console.log(my_url);
+		window.location.replace(my_url);
+		</script>
+
+    </head>
+    <body>
+    
+Redirecting...
+
+    </body>
+</html>

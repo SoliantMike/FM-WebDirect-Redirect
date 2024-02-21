@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        
+        <title>Redirect</title>
+
+		<script type="text/javascript">
+
+		var url_string = window.location.href; 
+		var url        = new URL(url_string);
+		var my_url      = url.searchParams.get("location");
+		
+		// console.log(my_url);
+		top.window.location.href = my_url ;
+		</script>
+
+    </head>
+    <body>
+    
+Redirecting...
+
+    </body>
+</html>
