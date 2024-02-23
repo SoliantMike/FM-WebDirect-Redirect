@@ -21,6 +21,6 @@ These can be changed as needed, and taken down from your FileMaker Server when d
 
 If the HTML files are hosted on a different web server than the FileMaker Server, you will need to update the FileMaker script steps that reference "Get ( HostName )" with the address of where the files are hosted. You may also need to adjust the CORS settings to allow javascript to run.
 
-John Howell demonstrated this in his 2019 DevCon session, if you want to see his presentation. [https://support.filemaker.com/s/article/CRE01-2019?language=en_US]
+Jonn Howell demonstrated this in his 2019 DevCon session, if you want to see his presentation. [https://support.filemaker.com/s/article/CRE01-2019?language=en_US]
 
 Read more here: <a href="https://www.soliantconsulting.com/blog/filemaker-webdirect/">https://www.soliantconsulting.com/blog/filemaker-webdirect/</a>
